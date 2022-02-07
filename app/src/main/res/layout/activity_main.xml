@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/studentimage">
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Attendence Application"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/quintessentialregular"
+        android:textFontWeight="10000"
+         />
+    <LinearLayout
+        android:id="@+id/linar_1"
+        android:layout_below="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:orientation="vertical"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="100dp"
+        android:padding="5dp">
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_below="@+id/first"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Admin"
+        android:textSize="30dp"
+        android:layout_below="@+id/first"
+        android:textColor="@color/black"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linar_2"
+        android:layout_toRightOf="@+id/linar_1"
+        android:layout_below="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp">
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/first"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_baseline_people_24"
+        />
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Student"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+    </LinearLayout>
+
+</RelativeLayout>
