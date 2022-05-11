@@ -5,52 +5,134 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register"
-    android:background="@drawable/register">
-<TextView
-    android:id="@+id/text1"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Please Register Yourself"
-    android:textSize="25dp"
-    android:background="#2743DF"
-    android:gravity="center"
-    android:padding="10dp"
-    android:textStyle="italic"
-    android:textFontWeight="1000"
-    android:textColor="@color/white"
-    android:fontFamily="@font/quintessentialregular"/>
-    <EditText
-        android:id="@+id/text2"
-        android:layout_below="@id/text1"
-        android:layout_width="match_parent"
+    android:background="@drawable/bluewall">
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Your Name"
-        android:layout_marginTop="18dp"
-        android:layout_marginLeft="220dp"
+        android:text="Student Registration"
+        android:textSize="35dp"
+        android:background="#9C3F51B5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textColor="#D0FFFFFF"
         />
 
     <EditText
-        android:id="@+id/text3"
+        android:id="@+id/reg_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text2"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="1dp"
-        android:hint="Roll No" />
+        android:layout_below="@id/register"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="40dp"
+        android:background="#68F6F8F6"
+        android:hint="Your Name"
+        android:padding="5dp"
+        android:textColorHint="#141515" />
     <EditText
-        android:id="@+id/text4"
+        android:id="@+id/reg_phone"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_below="@id/text3"
-        android:layout_marginLeft="220dp"
-        android:layout_marginTop="1dp"
-        android:hint="Phone No" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_name"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:background="#61F6F8F6"
+        android:hint="Phone Number"
+        android:padding="5dp"
+        android:textColorHint="#141515" />
+
+    <TextView
+        android:id="@+id/reg_Batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_phone"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:text="Choose Batch:-"
+        android:textSize="20dp"
+       />
+
+    <Spinner
+        android:id="@+id/batch_spin"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/reg_Batch"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="40dp"
+        android:background="#66F6F8F6"
+        android:textColorHint="#141515" />
     <EditText
-        android:id="@+id/text5"
-        android:layout_below="@id/text4"
+        android:id="@+id/reg_Email"
         android:layout_width="match_parent"
-        android:layout_height="90dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/batch_spin"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:background="#66F6F8F6"
+        android:hint="Email"
+        android:padding="5dp"
+        android:textColorHint="#141515" />
+    <EditText
+        android:id="@+id/reg_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_Email"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:background="#7CF6F8F6"
         android:hint="Address"
-        android:layout_marginTop="1dp"
-        android:layout_marginLeft="220dp" />
+        android:padding="18dp"
+        android:textColorHint="#141515" />
+
+
+    <ImageView
+        android:id="@+id/got_image"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/reg_Address"
+        android:background="@drawable/studentimage"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        />
+    <Button
+        android:id="@+id/take_image"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/reg_Address"
+        android:layout_toRightOf="@id/got_image"
+        android:layout_marginLeft="-8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:text="Take Image"
+        android:backgroundTint="#CB3F51B5"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/got_image"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="45dp"
+        android:text="Register"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/got_image"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="45dp"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Login"
+        android:backgroundTint="#0F76C8"
+        android:padding="15dp"/>
 </RelativeLayout>

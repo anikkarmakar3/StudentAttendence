@@ -11,14 +11,15 @@
         android:id="@+id/first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Student Attendence Application"
         android:layout_centerHorizontal="true"
-        android:textSize="25dp"
-        android:textStyle="bold"
         android:layout_marginTop="15dp"
         android:fontFamily="@font/quintessentialregular"
+        android:text="Student Attendence Application"
         android:textFontWeight="10000"
-         />
+        android:textSize="28dp"
+        android:textColor="#498503"
+        android:textStyle="bold"
+        />
     <LinearLayout
         android:id="@+id/linar_1"
         android:layout_below="@+id/first"
