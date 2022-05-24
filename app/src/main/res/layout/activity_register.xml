@@ -78,11 +78,24 @@
         android:hint="Email"
         android:padding="5dp"
         android:textColorHint="#141515" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_Email"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="40dp"
+        android:background="#66F6F8F6"
+        android:hint="Password"
+        android:padding="5dp"
+        android:textColorHint="#141515" />
     <EditText
         android:id="@+id/reg_Address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/reg_Email"
+        android:layout_below="@id/reg_password"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="40dp"
@@ -94,33 +107,35 @@
 
     <ImageView
         android:id="@+id/got_image"
-        android:layout_width="200dp"
-        android:layout_height="80dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
         android:layout_below="@id/reg_Address"
         android:background="@drawable/studentimage"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="40dp"
         />
+
     <Button
         android:id="@+id/take_image"
         android:layout_width="100dp"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/reg_Address"
         android:layout_toRightOf="@id/got_image"
         android:layout_marginLeft="-8dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="40dp"
         android:text="Take Image"
+        android:textSize="12dp"
         android:backgroundTint="#CB3F51B5"/>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/stu_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/got_image"
         android:layout_marginLeft="90dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="25dp"
         android:text="Register"
         android:padding="15dp"/>
 
@@ -130,8 +145,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/got_image"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="45dp"
-        android:layout_toRightOf="@+id/button1"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/stu_register"
         android:text="Login"
         android:backgroundTint="#0F76C8"
         android:padding="15dp"/>
