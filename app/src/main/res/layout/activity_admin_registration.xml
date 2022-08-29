@@ -6,24 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".AdminRegistration"
     android:background="@drawable/register">
+
     <TextView
         android:id="@+id/admin_reg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Admin Registration"
-        android:textSize="35dp"
-        android:background="#4CAF50"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
+        android:background="#4CAF50"
         android:padding="10dp"
+        android:text="Admin Registration"
         android:textColor="@color/white"
-        />
+        android:textSize="35dp" />
+
+    <EditText
+        android:id="@+id/admin_reg_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_reg"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="40dp"
+        android:background="#4B4CAF50"
+        android:hint="Name"
+        android:padding="10dp"
+        android:textColorHint="#141515" />
 
     <EditText
         android:id="@+id/admin_reg_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/admin_reg"
+        android:layout_below="@id/admin_reg_name"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="35dp"
         android:layout_marginRight="40dp"
@@ -44,11 +57,25 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"/>
 
+    <EditText
+        android:id="@+id/admin_reg_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_reg_pass"
+        android:layout_marginTop="15dp"
+        android:hint="Phone Number"
+        android:textColorHint="#2F302F"
+        android:background="#544CAF50"
+        android:padding="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+
     <Button
         android:id="@+id/admin_reg_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/admin_reg_pass"
+        android:layout_below="@id/admin_reg_Phone"
         android:layout_marginLeft="100dp"
         android:layout_marginTop="25dp"
         android:text="Register"
@@ -58,7 +85,7 @@
         android:id="@+id/admin_reg_login_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/admin_reg_pass"
+        android:layout_below="@id/admin_reg_Phone"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="25dp"
         android:layout_toRightOf="@+id/admin_reg_button"

@@ -94,4 +94,26 @@
         android:text="Help"
         android:backgroundTint="#70AA2C"
         android:textSize="15dp"/>
+
+    <Button
+        android:id="@+id/btn_notice"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btn_attendence"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#70AA2C"
+        android:text="Notice"
+        android:textSize="15dp" />
+    <Button
+        android:id="@+id/btn_online_classroom"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btn_attendence"
+        android:layout_toRightOf="@id/btn_notice"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="Online classroom"
+        android:backgroundTint="#70AA2C"
+        android:textSize="15dp"/>
 </RelativeLayout>
